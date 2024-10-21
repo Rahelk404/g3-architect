@@ -149,6 +149,87 @@ main>section {
   font-weight: 700;
 }
 
+/* Featured and enjoy related style */
+
+.features {
+  gap: 140px;
+}
+
+.feature-head {
+  /* width: 586px; */
+}
+
+#features-border {
+  border-left: 5px solid #FF900E;
+  padding-left: 5px;
+}
+
+.feature-card {
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+  max-width: 586px;
+  padding: 30px;
+}
+
+.features-card-head {
+  margin-bottom: 10px;
+  color: #131313;
+  font-weight: 600;
+  font-size: 1.25em;
+}
+
+.features-card-description {
+  font-weight: 400;
+  font-size: 1rem;
+  max-width: 586px;
+}
+
+.fst-p {
+  margin-top: 24px;
+  margin-bottom: 30px;
+  max-width: 586px;
+}
+.features-architec{
+  max-width: 700px;
+  height: 982px;
+}
+.features-architect img{
+  width: 100%;
+}
+
+
+.feature-experiance {
+
+  border-radius: 8px;
+  background: #FF900E;
+  max-width: 342px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  position: relative;
+  /* padding: 40px; */
+  align-content: center;
+}
+
+.feature-experiance h4 {
+  color: #FFF;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 70px;
+}
+
+.feature-experiance p {
+  color: #FFF;
+  font-size: 1.30rem;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: center;
+}
+
+
 /* fact related style */
 .fact-container {
   display: grid;
@@ -178,28 +259,30 @@ main>section {
   font-weight: 600;
 }
 
-.fact-description{
+.fact-description {
   max-width: 540px;
   margin-top: 25px;
 }
 
+
+
 /* Our sponsor related style */
-.sponsor-info{
+.sponsor-info {
   max-width: 540px;
   margin: 50px auto;
   text-align: center;
 }
 
-.sponsor-companies{
+.sponsor-companies {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
 
-.sponsor-companies img{
+.sponsor-companies img {
   filter: grayscale(100%);
 }
 
-.sponsor-description{
+.sponsor-description {
   margin-top: 25px;
   margin-bottom: 50px;
 }
@@ -214,35 +297,77 @@ main>section {
 
   .navbar,
   .nav-links,
-  .team {
+  .team,
+  .features {
     flex-direction: column;
   }
 
-  .team-img-container, .fact-container, .sponsor-companies {
+  .team-img-container,
+  .fact-container,
+  .sponsor-companies {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 24px;
   }
-  
-  .fact-container, .sponsor-companies{
+
+  .fact-container,
+  .sponsor-companies {
     justify-items: center;
   }
-  .sponsor-companies{
+
+  .sponsor-companies {
     gap: 50px;
   }
 
-  .fact-description, .fact-h3-title, .sponsor-description{
+  .fact-description,
+  .fact-h3-title,
+  .sponsor-description,
+  .features-head,
+  .features-architect {
     padding: 0 20px;
   }
+
   .our-feature {
     margin-left: 20px;
     margin-top: 10px;
   }
+
+  .feature-experiance {
+
+    border-radius: 8px;
+    background: #FF900E;
+    max-width: 172px;
+    height: 100px;
+    margin-top: -80px;
+    margin-left: -15px;
+    position: relative;
+    padding: 20px;
+    align-content: center;
+  }
+
+  .feature-experiance h4 {
+    color: #FFF;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .feature-experiance p {
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+  }
+
+
 }
 
 /* For Medium Device */
 @media screen and (min-width:576px) and (max-width:992px) {
-  .team {
+
+  .team,
+  .features {
     flex-direction: column;
   }
 
@@ -254,21 +379,61 @@ main>section {
     margin-top: 20px;
   }
 
-  .fact-container{
+  .fact-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     gap: 50px;
   }
 
-  .fact-h3-title, .fact-description{
+  .fact-h3-title,
+  .fact-description {
     align-items: center;
     text-align: center;
     margin: 20px auto;
   }
-  .sponsor-companies{
+
+  .sponsor-companies {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
+  }
+  
+
+  .features-architect{
+   margin: 0 auto;
+  }
+
+  .features-head{
+    max-width: 586px;
+    margin: 0 auto;
+  }
+  
+  .feature-experiance {
+
+    border-radius: 8px;
+    background: #FF900E;
+    max-width: 272px;
+    height: 150px;
+    margin-top: -100px;
+    margin-left: -100px;
+    position: relative;
+    padding: 20px;
+    align-content: center;
+  }
+
+  .feature-experiance h4 {
+    color: #FFF;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .feature-experiance p {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
   }
 }
